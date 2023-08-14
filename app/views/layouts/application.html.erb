@@ -6,46 +6,105 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/5ebbe60a2a.js" crossorigin="anonymous"></script>
     <!-- stylesheet_link_tagの場合cssファイルは、app/assets 配下のファイルを参照します。 -->
     <!-- stylesheet_pack_tagの場合は、app/javascript 配下のファイルを参照するようになります。 -->
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <header>
-      <% if user_signed_in? %> <!-- ログイン済みならばtrue --> 
-        <li>
-          <%= link_to "Home", root_path %>
-        </li>
-        <li>
-          <%= link_to "About", about_path %>
-        </li>
-        <li>
-          <%= link_to "books", books_path %>
-        </li>
-        <li>
-          <!-- link_to ヘルパーの method オプションを設定して、ログアウトリンクを作成します。 -->
-          <%= link_to "Log out", destroy_user_session_path, method: :delete %>
-        </li>
-        <% else %>　<!-- ログインしていなければfalse-->
-        <li>
-          <%= link_to "Bookers", root_path %>
-        </li>
-        <li>
-          <%= link_to "Home", root_path %>
-        </li>
-        <li>
-          <%= link_to "About", about_path %>
-        </li>
-        <li>
-          <%= link_to "Sign up", new_user_registration_path %>
-        </li>
-        <li>
-          <%= link_to "Log in", new_user_session_path %>
-        </li>
-        <% end %>
+  <body class="d-flex flex-column vh-100">
+    <header class="shadow-sm">
+      <!-- navbar ナビゲーションバーの表示 -->
+      <!-- navbar-expand-[ブレークポイント] 指定したブレークポイント（画面幅）に応じて -->
+      <!-- ナビゲーションバー、ナビゲーションアイコン（ハンバーガーメニュー）を切り替えて表示-->
+      <!-- navbar-[カラースキーム] ナビゲーションのカラースキームの指定 -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- navbar-brand ロゴに使用されるnavbarのサポートclass -->
+          <a class="navbar-brand" href="/">
+            <span>Bookers</span>
+          </a>
+          <!-- navbar-toggler ナビゲーションアイコン（ハンバーガーメニュー）の枠部分 -->
+          <!-- navbar-toggler-icon ナビゲーションアイコン（ハンバーガーメニュー）の三本線部分 -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" area-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ナビゲーションアイコンを開く前に隠しておきたいメニューは「collapse」classが付与された要素の中に入れておく -->
+          <!-- 「collapse」classを付与している要素に任意のidを付与する -->
+          <!-- 付与したidは「navbar-toggler」classが付与される要素のdata-targetに指定する（頭にセレクタ#をつける）-->
+          <!-- 「navbar-toggler」classが付与される要素にdata-toggle="collapse"、data-target="#[id名]"、aria-controls="[id名]"、aria-expanded="false"、aria-label="Toggle navigation" -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+            <!-- % if user_signed_in? % は、devise 側で用意しているヘルパーメソッドです。 -->
+            <% if user_signed_in? %> <!-- ログイン済みならばtrue --> 
+              <li>
+                <a class="nav-link text-light" href="/">
+                  <i class="fas fa-home" area-hidden="true"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-light" href="/users">
+                  <i class="fas fa-users" area-hidden="true"></i>
+                  Users
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-light" href="/books">
+                  <i class="fas fa-book-open" area-hidden="true"></i>
+                  Books
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-light" href="/users/sign_out">
+                  <i class="fas fa-sign-out-alt" area-hidden="true"></i>
+                  Log out
+                </a>
+              </li>
+              <% else %>　<!-- ログインしていなければfalse-->
+              <li>
+                <a class="nav-link text-light" href="/">
+                  <i class="fas fa-home" area-hidden="true"></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-light" href="/home/about">
+                  <i class="fas fa-link" area-hidden="true"></i>
+                  About
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-light" href="/home/sign_up">
+                  <i class="fas fa-user-plus" area-hidden="true"></i>
+                  Sign up
+                </a>
+              </li>
+              <li>
+                <a class="nav-link text-light" href="/home/sign_in">
+                  <i class="fas fa-sign-in-alt" area-hidden="true"></i>
+                  Log in
+                </a>
+              </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+    <main>
     <%= yield %>
+    </main>
+    <footer>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="mx-auto">
+            <p>CopyRight Infratop.inc</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
