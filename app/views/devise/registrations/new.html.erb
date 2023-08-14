@@ -1,3 +1,47 @@
+<div class="container">
+  <div class="row no-gutters">
+    <!-- 画面幅が切り替わったときに、入力フォームの幅などを調節するためにcolを二つ指定 -->
+    <!-- col-sm-10 画面幅が576px以上のときに12分割したグリッドの10分割分の幅をとる-->
+    <!-- col-md-5 画面幅が768px以上のときに12分割したグリッドの5分割分の幅をとる-->
+    <div class="col-mb-5 col-sm-10 mx-2 mx-sm-auto text-center shadow-lg rounded px-0 my-5">
+      <h5 class="test-dark bg-light p-4 mb-0">ユーザーログイン</h5> 
+      <div class="form-body p-4">
+        <div class="mx-auto text-center">
+          <p>メールアドレスと<br>パスワードを入力してください。</p>
+        </div>
+        <%= form_with model: @user, url: user_registration_path, local: true  do |f| %>
+          <%= render "devise/shared/error_messages", resource: resource %>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" aria-hidden="true"><i class="fas fa-user"></i></span>              
+            </div>
+            <%= f.text_field :name, autofocus: true, class:"form-control", id:"inputName", placeholder:"名前" %>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+            </div>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", id:"inputEmail", placeholder:"メールアドレス" %>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" aria-hidden="true"><i class="fas fa-lock"></i></span>
+            </div>
+            <%= f.password_field :password, autocomplete: "off", class:"form-control", id:"inputPassword", placeholder:"パスワード" %>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" aria-hidden="true"><i class="fas fa-check-circle"></i></span>
+            </div>
+            <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control", id:"inputConfirmPassword", placeholder:"パスワード確認" %>
+          </div>
+          <%= f.submit "サインイン", class:"btn btn-lg btn-block btn-info mt-5" %>
+        <% end %>
+      </div>
+    </div>
+  </div>  
+</div>
+
 <h2>Sign up</h2> 
 
 <%= form_with model: @user, url: user_registration_path  do |f| %>

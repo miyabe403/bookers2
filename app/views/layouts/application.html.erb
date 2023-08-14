@@ -40,10 +40,13 @@
             <!-- % if user_signed_in? % は、devise 側で用意しているヘルパーメソッドです。 -->
             <% if user_signed_in? %> <!-- ログイン済みならばtrue --> 
               <li>
-                <a class="nav-link text-light" href="/">
+                <a class="nav-link text-light" href="/users/:id">
                   <i class="fas fa-home" area-hidden="true"></i>
                   Home
                 </a>
+                <i class="fas fa-home" area-hidden="true">
+                <%= link_to "Home", user_path(current_user.id), class: 'nav-link text-light' %>
+                </i>
               </li>
               <li>
                 <a class="nav-link text-light" href="/users">
@@ -58,7 +61,7 @@
                 </a>
               </li>
               <li>
-                <a class="nav-link text-light" href="/users/sign_out">
+                <a class="nav-link text-light" rel="nofollow" data-method="delete" href="/users/sign_out">
                   <i class="fas fa-sign-out-alt" area-hidden="true"></i>
                   Log out
                 </a>
