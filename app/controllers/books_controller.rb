@@ -26,5 +26,10 @@ class BooksController < ApplicationController
   def edit
   end
   
- 
+ # 投稿データのストロングパラメータ
+  private
+
+  def book_params
+    params.require(:book).permit(:title, :body, :image)
+  end
 end
