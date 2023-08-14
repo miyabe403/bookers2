@@ -26,7 +26,7 @@ class BooksController < ApplicationController
   def edit
   end
   
- # 投稿データのストロングパラメータ
+ # 投稿データのストロングパラメータ 
   private
 
   def book_params
