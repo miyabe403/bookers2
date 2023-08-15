@@ -16,14 +16,27 @@ class BooksController < ApplicationController
   end
  
   def index 
-    @books = Book.all
+    # @books = Book.all
     @book = Book.all
+    @books = Book.all
   end
 
   def show
+    @post_image = PostImage.find(params[:id])
   end
 
   def edit
+    @book = Book.find(params[:id])
+  end
+  
+  def show
+    @book = Book.find(params[:id])
+  end
+  
+  def destroy
+    book = Book.find(params[:id])
+    book.destroy
+    redirect_to '/books'
   end
   
  # 投稿データのストロングパラメータ 

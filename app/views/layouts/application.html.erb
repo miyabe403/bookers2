@@ -40,56 +40,53 @@
             <!-- % if user_signed_in? % は、devise 側で用意しているヘルパーメソッドです。 -->
             <% if user_signed_in? %> <!-- ログイン済みならばtrue --> 
               <li>
-                <a class="nav-link text-light" href="/users/:id">
+                <%= link_to user_path(current_user.id), class: 'nav-link text-light' do %>
                   <i class="fas fa-home" area-hidden="true"></i>
                   Home
-                </a>
-                <i class="fas fa-home" area-hidden="true">
-                <%= link_to "Home", user_path(current_user.id), class: 'nav-link text-light' %>
-                </i>
+                <% end %>
               </li>
               <li>
-                <a class="nav-link text-light" href="/users">
+                <%= link_to users_path, class: 'nav-link text-light' do %>
                   <i class="fas fa-users" area-hidden="true"></i>
                   Users
-                </a>
+                <% end %>
               </li>
               <li>
-                <a class="nav-link text-light" href="/books">
+                <%= link_to books_path, class: 'nav-link text-light' do %>
                   <i class="fas fa-book-open" area-hidden="true"></i>
                   Books
-                </a>
+                <% end %>
               </li>
               <li>
-                <a class="nav-link text-light" rel="nofollow" data-method="delete" href="/users/sign_out">
+                <%= link_to destroy_user_session_path, method: :delete, class: 'nav-link text-light' do %>
                   <i class="fas fa-sign-out-alt" area-hidden="true"></i>
                   Log out
-                </a>
+                <% end %>
               </li>
               <% else %>　<!-- ログインしていなければfalse-->
               <li>
-                <a class="nav-link text-light" href="/">
+                <%= link_to root_path, class: 'nav-link text-light' do %>
                   <i class="fas fa-home" area-hidden="true"></i>
                   Home
-                </a>
+                <% end %>
               </li>
               <li>
-                <a class="nav-link text-light" href="/home/about">
+                <%= link_to about_path, class: 'nav-link text-light' do %>
                   <i class="fas fa-link" area-hidden="true"></i>
                   About
-                </a>
+                <% end %>
               </li>
               <li>
-                <a class="nav-link text-light" href="/users/sign_up">
+                <%= link_to new_user_registration_path, class: 'nav-link text-light' do %>
                   <i class="fas fa-user-plus" area-hidden="true"></i>
                   Sign up
-                </a>
+                <% end %>
               </li>
               <li>
-                <a class="nav-link text-light" href="/users/sign_in">
+                <%= link_to new_user_session_path, class: 'nav-link text-light' do %>
                   <i class="fas fa-sign-in-alt" area-hidden="true"></i>
                   Log in
-                </a>
+                <% end %>
               </li>
               <% end %>
             </ul>
