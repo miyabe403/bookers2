@@ -1,2 +1,28 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<p id="notice"></p>
+<div class="container px-5 px-sm-0">
+  <div class="row">
+    <div class="col-md-3">
+<%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
+      <h2 class="mt-3">Editing Book</h2>
+      <form action="/books" accept-charset="UTF-8" method="post">
+        <input type="hidden" name="authenticity_token" autocomplete="off"></input>
+        <div class="form-group">
+          <%= f.label :Title %>
+          <%= f.text_field :title, class:"form-control book_title" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :Opinion %>
+          <%= f.text_area :body, class:"form-control book_body", height:"145px;" %>
+        </div>
+        <div class="form-group">
+        <%= f.submit 'Update Book', class:"btn btn-success" %>
+        </div>
+        <%= link_to "show", book_path(@book.id) %>  <!-- 詳細画面へ遷移するリンクを設定 -->
+        <a> | </a>
+        <%= link_to "back", books_path %>  <!-- 一覧画面へ遷移するリンクを設定 -->
+        
+        <%= link_to "削除", book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+        <% end %>
+        </div>
+    </div>   
+</div>

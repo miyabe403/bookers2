@@ -7,8 +7,9 @@ class Book < ApplicationRecord
     # このため、単数形の「user」になっている点に注意しましょう。
     belongs_to :user
     
-    # validates :title, presence: true
-    # validates :image, presence: true
+     validates :title, presence: true
+     validates :body, presence: true
+     validates :image, presence: true
     
     # get_image メソッド =特定の処理を名前で呼び出すことができる
     # unless = 画像が設定されない場合はimagesに格納されているno_image.jpgという画像をデフォルト画像としてActiveStorageに格納する

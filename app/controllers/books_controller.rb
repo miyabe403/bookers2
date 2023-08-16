@@ -9,7 +9,7 @@ class BooksController < ApplicationController
     @book.user_id = current_user.id  # 空のモデルでは、"[モデル名].[カラム名]"という形で、保存する。 current_user は、ログイン中のユーザー情報を取得することができる
 
     if @book.save
-      redirect_to books_path
+      redirect_to book_path(current_user.id)
     else
       render :new
     end
@@ -20,9 +20,10 @@ class BooksController < ApplicationController
     @book = Book.all
     @books = Book.all
   end
-
+ 
   def show
-    @post_image = PostImage.find(params[:id])
+    @book = Book.find(params[:id])
+    @books = Book.all
   end
 
   def edit
@@ -31,6 +32,24 @@ class BooksController < ApplicationController
   
   def show
     @book = Book.find(params[:id])
+  end
+   
+  def update
+    book = Book.find(params[:id])
+    # book.update(book_params)
+    # redirect_to book_path(book.id)
+    
+    if book.update(book_params)  # 3. データが入力されていればデータをデータベースに保存するためのupdateメソッド実行
+      # 4. フラッシュメッセージを定義し、詳細画面へリダイレクト
+      flash[:notice] = "successfully"
+      redirect_to book_path(book.id)  # 「転送したいアクションへのURL」を指定します。
+    else  # データが入力されていなければ、saveメソッドでfalseが返されます。
+      # 4. flash.nowでフラッシュメッセージを定義し、new.html.erbを描画する
+      flash.now[:alert] = "errors"  #キーをalertに変更
+      @books = Book.all
+      @book = Book.new
+      render :edit  #  render :アクション名で、同じコントローラ内の別アクションのViewを表示できます。　
+    end
   end
   
   def destroy
