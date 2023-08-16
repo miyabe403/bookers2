@@ -1,6 +1,6 @@
 class Book < ApplicationRecord
     # Book モデルには、ActiveStorage を使って画像を持たせます。
-    has_one_attached :profile_image
+    has_one_attached :profile_image 
     
     # PostImage モデルに対して、User モデルとの関係性を追加していきます。
     # PostImage モデルに関連付けられるのは、1 つの User モデルです。
