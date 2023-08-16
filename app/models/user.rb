@@ -11,9 +11,9 @@ class User < ApplicationRecord
   # profile_imageという名前でActiveStorageでプロフィール画像を保存
   has_one_attached :profile_image
   
-  validates :name, presence: true
-  validates :introduction, presence: true
-  validates :profile_image, presence: true
+  # validates :name, presence: true
+  # validates :introduction, presence: true
+  # validates :profile_image, presence: true
   
   # get_image メソッド =特定の処理を名前で呼び出すことができる 
   def get_profile_image(width, height)

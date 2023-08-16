@@ -1,4 +1,4 @@
-<%= render 'list', users: @users %>
+<%= render 'books/list', book: @book %>
     <div class="col-md-8 offset-md-1">
       <h2>Users</h2>
       <table class="table table-hover table-inverse">
@@ -10,7 +10,7 @@
           </tr>
         </thead>
         <tbody>
-        <% @users.each do |user| %>
+        <% @users.each do |user| %>  <!-- resources の記述では、名前付きルートと違いURLとメソッドは指定 -->
           <tr>
             <td><%= image_tag current_user.get_profile_image(100,100) %></td> 
             <td><%= user.name %></td>

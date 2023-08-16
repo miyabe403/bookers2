@@ -2,11 +2,12 @@ class UsersController < ApplicationController
   # メソッドとして処理をまとめたことで、before_actionを使用することができます。
   # before_actionは、コントローラーで各アクションを実行する前に実行したい処理を指定することができるメソッドです。
   # 実行したい処理は、メソッドとしてまとめることで実行できます。
-  before_action :is_matching_login_user, only: [:edit, :update]
+  # before_action :is_matching_login_user, only: [:edit, :update]
   
   def index
    @user = User.all
    @users = User.all
+   @book = Book.new
   end
 
   def show
