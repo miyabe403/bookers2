@@ -22,7 +22,7 @@ class BooksController < ApplicationController
   end
  
   def show
-    @book = Book.new #空のインスタンスを用意
+    @book = Book.new #空のインスタンスを用意 
     @books = Book.all
   end
 
