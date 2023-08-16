@@ -11,7 +11,7 @@ class BooksController < ApplicationController
     if @book.save
       redirect_to book_path(@book.id) #current_user.id では無く@book.idを指定する
     else
-      render :new
+      render :new 
     end
   end
  
