@@ -9,7 +9,7 @@ class BooksController < ApplicationController
     @book.user_id = current_user.id  # 空のモデルでは、"[モデル名].[カラム名]"という形で、保存する。 current_user は、ログイン中のユーザー情報を取得することができる
 
     if @book.save
-      redirect_to book_path(@book.id)
+      redirect_to book_path(@book.id) #current_user.id では無く@book.idを指定する
     else
       render :new
     end
@@ -17,12 +17,12 @@ class BooksController < ApplicationController
  
   def index 
     # @books = Book.all
-    @book = Book.new
+    @book = Book.new #空のインスタンスを用意
     @books = Book.all
   end
  
   def show
-    @book = Book.new 
+    @book = Book.new #空のインスタンスを用意
     @books = Book.all
   end
 
@@ -62,6 +62,6 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:title, :body)
+    params.require(:book).permit(:title, :body)  # ストロングパラメータの不要な image を削除
   end
 end

@@ -9,6 +9,7 @@ class Book < ApplicationRecord
     
      validates :title, presence: true
      validates :body, presence: true
+     # 不要なvalidatesのimageを削除
     
     
 end

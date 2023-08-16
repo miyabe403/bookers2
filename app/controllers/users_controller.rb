@@ -7,12 +7,13 @@ class UsersController < ApplicationController
   def index
    @user = User.all
    @users = User.all
-   @book = Book.new
+   @book = Book.new  # 部分テンプレートを呼び出すときに空の変数を用意
   end
 
   def show
    @user = User.find(params[:id])
    @books = @user.books
+   @book = Book.new # 部分テンプレートを呼び出すときに空の変数を用意
   end
 
   def edit
