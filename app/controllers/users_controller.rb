@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def index
    @user = User.all
    @users = User.all
-   @book = Book.new  # 部分テンプレートを呼び出すときに空の変数を用意
+   @book = Book.new  # 部分テンプレートを呼び出すときに空の変数を用意 
   end
 
   def show
