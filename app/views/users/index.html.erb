@@ -1,21 +1,20 @@
 <%= render 'list', users: @users %>
     <div class="col-md-8 offset-md-1">
-      <h2>Books</h2>
+      <h2>Users</h2>
       <table class="table table-hover table-inverse">
         <thead>
           <tr>
-            <th></th>
-            <th>Title</th>
-            <th>Opinion</th>
+            <th>image</th>
+            <th>name</th>
             <th colspan="3"></th>
           </tr>
         </thead>
         <tbody>
         <% @users.each do |user| %>
           <tr>
-            <td><% image_tag current_user.get_profile_image(100,100) %></td>
+            <td><%= image_tag current_user.get_profile_image(100,100) %></td>
             <td><%= user.name %></td>
-            <td><%= link_to user_path(current_user.id), class: 'nav-link text-dark' do %>
+            <td><%= link_to user_path(current_user.id), style: 'color: #007bff; padding: 0;' do %>
                   show
                 <% end %>
             </td>

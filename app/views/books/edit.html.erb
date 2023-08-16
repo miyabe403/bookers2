@@ -18,10 +18,8 @@
         <%= f.submit 'Update Book', class:"btn btn-success" %>
         </div>
         <%= link_to "show", book_path(@book.id) %>  <!-- 詳細画面へ遷移するリンクを設定 -->
-        <a> | </a>
+        <a>|</a>
         <%= link_to "back", books_path %>  <!-- 一覧画面へ遷移するリンクを設定 -->
-        
-        <%= link_to "削除", book_path(@book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
         <% end %>
         </div>
     </div>   
