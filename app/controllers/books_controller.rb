@@ -63,5 +63,5 @@ class BooksController < ApplicationController
 
   def book_params
     params.require(:book).permit(:title, :body)  # ストロングパラメータの不要な image を削除
-  end
+  end 
 end
