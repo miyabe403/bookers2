@@ -31,8 +31,9 @@ class UsersController < ApplicationController
       flash[:notice] = "successfully"
       redirect_to user_path(@user.id) #current_user.id では無く@user.idを指定する
     else
-      flash.now[:alert] = "errors"  #キーをalertに変更
-      render :new
+      # flash.now[:alert] = "errors"  #キーをalertに変更
+      @users = User.all
+      render :edit
     end
   end
   

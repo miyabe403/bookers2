@@ -7,9 +7,9 @@ class Book < ApplicationRecord
     # このため、単数形の「user」になっている点に注意しましょう。
     belongs_to :user
     
-     validates :title, presence: true
-     validates :body, presence: true
+     validates :title, presence: true # 空でないように設定
+     validates :body, length: { maximum: 200 }, presence: true # 空でない、かつ最大200文字までに設定
      # 不要なvalidatesのimageを削除
-    
+     
     
 end
