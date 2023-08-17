@@ -18,7 +18,7 @@ class BooksController < ApplicationController
       redirect_to book_path(@book.id) #current_user.id では無く@book.idを指定する
     else
       # flash.now[:alert] = "errors"  #キーをalertに変更
-      @books = Book.all #バリテーションのエラーメッセージを表示用に使用する一覧データ取得用の変数
+      @books = Book.all #バリテーションのエラーメッセージを表示用に使用する一覧データ取得用の変数 
       render :index #render の遷移先を index に変更 
     end
   end
