@@ -12,7 +12,7 @@ class User < ApplicationRecord
   has_one_attached :profile_image
   
   validates :name, length: { in: 2..20 }, presence: true, uniqueness: true # name：一意性を持たせ、かつ2～20文字の範囲で設定
-  validates :introduction, length: { maximum: 50 }, presence: true # introduction：最大50文字までに設定
+  validates :introduction, length: { maximum: 50 }, presence: true # introduction：最大50文字までに設定 
   validates :profile_image, presence: true
   
   # get_image メソッド =特定の処理を名前で呼び出すことができる 
