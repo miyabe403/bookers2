@@ -37,7 +37,7 @@ Userモデルのテスト
 [32m      Sign upリンクの内容が正しい[0m
   アバウト画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 1)[0m
+[32m      URLが正しい[0m
   ヘッダーのテスト: ログインしていない場合
     表示内容の確認
 [32m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である[0m
@@ -48,7 +48,7 @@ Userモデルのテスト
     リンクの内容を確認
 [32m      Bookersを押すと、トップ画面に遷移する[0m
 [32m      Homeを押すと、トップ画面に遷移する[0m
-[31m      Aboutを押すと、アバウト画面に遷移する (FAILED - 2)[0m
+[32m      Aboutを押すと、アバウト画面に遷移する[0m
 [32m      Sign upを押すと、新規登録画面に遷移する[0m
 [32m      Log inを押すと、ログイン画面に遷移する[0m
   ユーザ新規登録のテスト
@@ -59,286 +59,274 @@ Userモデルのテスト
 [32m      emailフォームが表示される[0m
 [32m      passwordフォームが表示される[0m
 [32m      password_confirmationフォームが表示される[0m
-[32m      Sign upボタンが表示される[0m
+[31m      Sign upボタンが表示される (FAILED - 1)[0m
     新規登録成功のテスト
-[31m      正しく新規登録される (FAILED - 3)[0m
-[31m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている (FAILED - 4)[0m
+[31m      正しく新規登録される (FAILED - 2)[0m
+[31m      新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている (FAILED - 3)[0m
   ユーザログイン
     表示内容の確認
 [32m      URLが正しい[0m
 [32m      「Log in」と表示される[0m
 [32m      nameフォームが表示される[0m
 [32m      passwordフォームが表示される[0m
-[31m      Log inボタンが表示される (FAILED - 5)[0m
+[31m      Log inボタンが表示される (FAILED - 4)[0m
 [32m      emailフォームは表示されない[0m
     ログイン成功のテスト
-[31m      ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている (FAILED - 6)[0m
+[31m      ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている (FAILED - 5)[0m
     ログイン失敗のテスト
-[31m      ログインに失敗し、ログイン画面にリダイレクトされる (FAILED - 7)[0m
+[31m      ログインに失敗し、ログイン画面にリダイレクトされる (FAILED - 6)[0m
   ヘッダーのテスト: ログインしている場合
     ヘッダーの表示を確認
-[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 8)[0m
-[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 9)[0m
-[31m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である (FAILED - 10)[0m
-[31m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である (FAILED - 11)[0m
-[31m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である (FAILED - 12)[0m
+[31m      Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である (FAILED - 7)[0m
+[31m      Homeリンクが表示される: 左上から2番目のリンクが「Home」である (FAILED - 8)[0m
+[31m      Usersリンクが表示される: 左上から3番目のリンクが「Users」である (FAILED - 9)[0m
+[31m      Booksリンクが表示される: 左上から4番目のリンクが「Books」である (FAILED - 10)[0m
+[31m      Log outリンクが表示される: 左上から5番目のリンクが「Log out」である (FAILED - 11)[0m
   ユーザログアウトのテスト
     ログアウト機能のテスト
-[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 13)[0m
-[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 14)[0m
+[31m      正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する (FAILED - 12)[0m
+[31m      ログアウト後のリダイレクト先が、トップになっている (FAILED - 13)[0m
 
 [STEP2] ユーザログイン後のテスト
   ヘッダーのテスト: ログインしている場合
     リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。
-[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 15)[0m
-[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 16)[0m
-[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 17)[0m
+[31m      Homeを押すと、自分のユーザ詳細画面に遷移する (FAILED - 14)[0m
+[31m      Usersを押すと、ユーザ一覧画面に遷移する (FAILED - 15)[0m
+[31m      Booksを押すと、投稿一覧画面に遷移する (FAILED - 16)[0m
   投稿一覧画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 18)[0m
-[31m      自分と他人の画像のリンク先が正しい (FAILED - 19)[0m
-[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 20)[0m
-[31m      自分の投稿と他人の投稿のオピニオンが表示される (FAILED - 21)[0m
+[31m      URLが正しい (FAILED - 17)[0m
+[31m      自分と他人の画像のリンク先が正しい (FAILED - 18)[0m
+[31m      自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい (FAILED - 19)[0m
+[31m      自分の投稿と他人の投稿のオピニオンが表示される (FAILED - 20)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 22)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 23)[0m
-[31m      「New book」と表示される (FAILED - 24)[0m
-[31m      titleフォームが表示される (FAILED - 25)[0m
-[31m      titleフォームに値が入っていない (FAILED - 26)[0m
-[31m      bodyフォームが表示される (FAILED - 27)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 28)[0m
-[31m      Create Bookボタンが表示される (FAILED - 29)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 21)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 22)[0m
+[31m      「New book」と表示される (FAILED - 23)[0m
+[31m      titleフォームが表示される (FAILED - 24)[0m
+[31m      titleフォームに値が入っていない (FAILED - 25)[0m
+[31m      bodyフォームが表示される (FAILED - 26)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 27)[0m
+[31m      Create Bookボタンが表示される (FAILED - 28)[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 30)[0m
-[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 31)[0m
+[31m      自分の新しい投稿が正しく保存される (FAILED - 29)[0m
+[31m      リダイレクト先が、保存できた投稿の詳細画面になっている (FAILED - 30)[0m
   自分の投稿詳細画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 32)[0m
-[31m      「Book detail」と表示される (FAILED - 33)[0m
-[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 34)[0m
-[31m      投稿のtitleが表示される (FAILED - 35)[0m
-[31m      投稿のbodyが表示される (FAILED - 36)[0m
-[31m      投稿の編集リンクが表示される (FAILED - 37)[0m
-[31m      投稿の削除リンクが表示される (FAILED - 38)[0m
+[31m      URLが正しい (FAILED - 31)[0m
+[31m      「Book detail」と表示される (FAILED - 32)[0m
+[31m      ユーザ画像・名前のリンク先が正しい (FAILED - 33)[0m
+[31m      投稿のtitleが表示される (FAILED - 34)[0m
+[31m      投稿のbodyが表示される (FAILED - 35)[0m
+[31m      投稿の編集リンクが表示される (FAILED - 36)[0m
+[31m      投稿の削除リンクが表示される (FAILED - 37)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 39)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 40)[0m
-[31m      「New book」と表示される (FAILED - 41)[0m
-[31m      titleフォームが表示される (FAILED - 42)[0m
-[31m      titleフォームに値が入っていない (FAILED - 43)[0m
-[31m      bodyフォームが表示される (FAILED - 44)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 45)[0m
-[31m      Create Bookボタンが表示される (FAILED - 46)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 38)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 39)[0m
+[31m      「New book」と表示される (FAILED - 40)[0m
+[31m      titleフォームが表示される (FAILED - 41)[0m
+[31m      titleフォームに値が入っていない (FAILED - 42)[0m
+[31m      bodyフォームが表示される (FAILED - 43)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 44)[0m
+[31m      Create Bookボタンが表示される (FAILED - 45)[0m
     投稿成功のテスト
-[31m      自分の新しい投稿が正しく保存される (FAILED - 47)[0m
+[31m      自分の新しい投稿が正しく保存される (FAILED - 46)[0m
     編集リンクのテスト
-[31m      編集画面に遷移する (FAILED - 48)[0m
+[31m      編集画面に遷移する (FAILED - 47)[0m
     削除リンクのテスト
-[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 49)[0m
-[31m      正しく削除される (FAILED - 50)[0m
-[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 51)[0m
+[31m      application.html.erbにjavascript_pack_tagを含んでいる (FAILED - 48)[0m
+[31m      正しく削除される (FAILED - 49)[0m
+[31m      リダイレクト先が、投稿一覧画面になっている (FAILED - 50)[0m
   自分の投稿編集画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 52)[0m
-[31m      「Editing Book」と表示される (FAILED - 53)[0m
-[31m      title編集フォームが表示される (FAILED - 54)[0m
-[31m      body編集フォームが表示される (FAILED - 55)[0m
-[31m      Update Bookボタンが表示される (FAILED - 56)[0m
-[31m      Showリンクが表示される (FAILED - 57)[0m
-[31m      Backリンクが表示される (FAILED - 58)[0m
+[31m      URLが正しい (FAILED - 51)[0m
+[31m      「Editing Book」と表示される (FAILED - 52)[0m
+[31m      title編集フォームが表示される (FAILED - 53)[0m
+[31m      body編集フォームが表示される (FAILED - 54)[0m
+[31m      Update Bookボタンが表示される (FAILED - 55)[0m
+[31m      Showリンクが表示される (FAILED - 56)[0m
+[31m      Backリンクが表示される (FAILED - 57)[0m
     編集成功のテスト
-[31m      titleが正しく更新される (FAILED - 59)[0m
-[31m      bodyが正しく更新される (FAILED - 60)[0m
-[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 61)[0m
+[31m      titleが正しく更新される (FAILED - 58)[0m
+[31m      bodyが正しく更新される (FAILED - 59)[0m
+[31m      リダイレクト先が、更新した投稿の詳細画面になっている (FAILED - 60)[0m
   ユーザ一覧画面のテスト
     表示内容の確認
-[31m      URLが正しい (FAILED - 62)[0m
-[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 63)[0m
-[31m      自分と他人の名前がそれぞれ表示される (FAILED - 64)[0m
-[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 65)[0m
+[31m      URLが正しい (FAILED - 61)[0m
+[31m      自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する (FAILED - 62)[0m
+[31m      自分と他人の名前がそれぞれ表示される (FAILED - 63)[0m
+[31m      自分と他人のshowリンクがそれぞれ表示される (FAILED - 64)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 66)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 67)[0m
-[31m      「New book」と表示される (FAILED - 68)[0m
-[31m      titleフォームが表示される (FAILED - 69)[0m
-[31m      titleフォームに値が入っていない (FAILED - 70)[0m
-[31m      bodyフォームが表示される (FAILED - 71)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 72)[0m
-[31m      Create Bookボタンが表示される (FAILED - 73)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 65)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 66)[0m
+[31m      「New book」と表示される (FAILED - 67)[0m
+[31m      titleフォームが表示される (FAILED - 68)[0m
+[31m      titleフォームに値が入っていない (FAILED - 69)[0m
+[31m      bodyフォームが表示される (FAILED - 70)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 71)[0m
+[31m      Create Bookボタンが表示される (FAILED - 72)[0m
   自分のユーザ詳細画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 74)[0m
-[31m      投稿一覧のユーザ画像のリンク先が正しい (FAILED - 75)[0m
-[31m      投稿一覧に自分の投稿のtitleが表示され、リンクが正しい (FAILED - 76)[0m
-[31m      投稿一覧に自分の投稿のbodyが表示される (FAILED - 77)[0m
-[31m      他人の投稿は表示されない (FAILED - 78)[0m
+[31m      URLが正しい (FAILED - 73)[0m
+[31m      投稿一覧のユーザ画像のリンク先が正しい (FAILED - 74)[0m
+[31m      投稿一覧に自分の投稿のtitleが表示され、リンクが正しい (FAILED - 75)[0m
+[31m      投稿一覧に自分の投稿のbodyが表示される (FAILED - 76)[0m
+[31m      他人の投稿は表示されない (FAILED - 77)[0m
     サイドバーの確認
-[31m      自分の名前と紹介文が表示される (FAILED - 79)[0m
-[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 80)[0m
-[31m      「New book」と表示される (FAILED - 81)[0m
-[31m      titleフォームが表示される (FAILED - 82)[0m
-[31m      titleフォームに値が入っていない (FAILED - 83)[0m
-[31m      bodyフォームが表示される (FAILED - 84)[0m
-[31m      bodyフォームに値が入っていない (FAILED - 85)[0m
-[31m      Create Bookボタンが表示される (FAILED - 86)[0m
+[31m      自分の名前と紹介文が表示される (FAILED - 78)[0m
+[31m      自分のユーザ編集画面へのリンクが存在する (FAILED - 79)[0m
+[31m      「New book」と表示される (FAILED - 80)[0m
+[31m      titleフォームが表示される (FAILED - 81)[0m
+[31m      titleフォームに値が入っていない (FAILED - 82)[0m
+[31m      bodyフォームが表示される (FAILED - 83)[0m
+[31m      bodyフォームに値が入っていない (FAILED - 84)[0m
+[31m      Create Bookボタンが表示される (FAILED - 85)[0m
   自分のユーザ情報編集画面のテスト
     表示の確認
-[31m      URLが正しい (FAILED - 87)[0m
-[31m      名前編集フォームに自分の名前が表示される (FAILED - 88)[0m
-[31m      画像編集フォームが表示される (FAILED - 89)[0m
-[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 90)[0m
-[31m      Update Userボタンが表示される (FAILED - 91)[0m
+[31m      URLが正しい (FAILED - 86)[0m
+[31m      名前編集フォームに自分の名前が表示される (FAILED - 87)[0m
+[31m      画像編集フォームが表示される (FAILED - 88)[0m
+[31m      自己紹介編集フォームに自分の自己紹介文が表示される (FAILED - 89)[0m
+[31m      Update Userボタンが表示される (FAILED - 90)[0m
     更新成功のテスト
-[31m      nameが正しく更新される (FAILED - 92)[0m
-[31m      introductionが正しく更新される (FAILED - 93)[0m
-[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 94)[0m
+[31m      nameが正しく更新される (FAILED - 91)[0m
+[31m      introductionが正しく更新される (FAILED - 92)[0m
+[31m      リダイレクト先が、自分のユーザ詳細画面になっている (FAILED - 93)[0m
 
 [STEP3] 仕上げのテスト
   サクセスメッセージのテスト
-[31m    ユーザ新規登録成功時 (FAILED - 95)[0m
-[31m    ユーザログイン成功時 (FAILED - 96)[0m
-[31m    ユーザログアウト成功時 (FAILED - 97)[0m
-[31m    ユーザのプロフィール情報更新成功時 (FAILED - 98)[0m
-[31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 99)[0m
-[31m    投稿データの更新成功時 (FAILED - 100)[0m
+[31m    ユーザ新規登録成功時 (FAILED - 94)[0m
+[31m    ユーザログイン成功時 (FAILED - 95)[0m
+[31m    ユーザログアウト成功時 (FAILED - 96)[0m
+[31m    ユーザのプロフィール情報更新成功時 (FAILED - 97)[0m
+[31m    投稿データの新規投稿成功時: 投稿一覧画面から行います。 (FAILED - 98)[0m
+[31m    投稿データの更新成功時 (FAILED - 99)[0m
   処理失敗時のテスト
     ユーザ新規登録失敗: nameを1文字にする
-[31m      新規登録されない (FAILED - 101)[0m
-[31m      新規登録画面を表示しており、フォームの内容が正しい (FAILED - 102)[0m
-[31m      バリデーションエラーが表示される (FAILED - 103)[0m
+[31m      新規登録されない (FAILED - 100)[0m
+[31m      新規登録画面を表示しており、フォームの内容が正しい (FAILED - 101)[0m
+[31m      バリデーションエラーが表示される (FAILED - 102)[0m
     ユーザのプロフィール情報編集失敗: nameを1文字にする
-[31m      更新されない (FAILED - 104)[0m
-[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 105)[0m
-[31m      バリデーションエラーが表示される (FAILED - 106)[0m
+[31m      更新されない (FAILED - 103)[0m
+[31m      ユーザ編集画面を表示しており、フォームの内容が正しい (FAILED - 104)[0m
+[31m      バリデーションエラーが表示される (FAILED - 105)[0m
     投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする
-[31m      投稿が保存されない (FAILED - 107)[0m
-[31m      投稿一覧画面を表示している (FAILED - 108)[0m
-[31m      新規投稿フォームの内容が正しい (FAILED - 109)[0m
-[31m      バリデーションエラーが表示される (FAILED - 110)[0m
+[31m      投稿が保存されない (FAILED - 106)[0m
+[31m      投稿一覧画面を表示している (FAILED - 107)[0m
+[31m      新規投稿フォームの内容が正しい (FAILED - 108)[0m
+[31m      バリデーションエラーが表示される (FAILED - 109)[0m
     投稿データの更新失敗: titleを空にする
-[31m      投稿が更新されない (FAILED - 111)[0m
-[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 112)[0m
-[31m      エラーメッセージが表示される (FAILED - 113)[0m
+[31m      投稿が更新されない (FAILED - 110)[0m
+[31m      投稿編集画面を表示しており、フォームの内容が正しい (FAILED - 111)[0m
+[31m      エラーメッセージが表示される (FAILED - 112)[0m
   ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する
-[32m    ユーザ一覧画面[0m
-[32m    ユーザ詳細画面[0m
-[32m    ユーザ情報編集画面[0m
-[32m    投稿一覧画面[0m
-[32m    投稿詳細画面[0m
-[32m    投稿編集画面[0m
+[31m    ユーザ一覧画面 (FAILED - 113)[0m
+[31m    ユーザ詳細画面 (FAILED - 114)[0m
+[31m    ユーザ情報編集画面 (FAILED - 115)[0m
+[31m    投稿一覧画面 (FAILED - 116)[0m
+[31m    投稿詳細画面 (FAILED - 117)[0m
+[31m    投稿編集画面 (FAILED - 118)[0m
   他人の画面のテスト
     他人の投稿詳細画面のテスト
       表示内容の確認
-[31m        URLが正しい (FAILED - 114)[0m
-[31m        「Book detail」と表示される (FAILED - 115)[0m
-[31m        ユーザ画像・名前のリンク先が正しい (FAILED - 116)[0m
-[31m        投稿のtitleが表示される (FAILED - 117)[0m
-[31m        投稿のopinionが表示される (FAILED - 118)[0m
-[31m        投稿の編集リンクが表示されない (FAILED - 119)[0m
-[31m        投稿の削除リンクが表示されない (FAILED - 120)[0m
+[31m        URLが正しい (FAILED - 119)[0m
+[31m        「Book detail」と表示される (FAILED - 120)[0m
+[31m        ユーザ画像・名前のリンク先が正しい (FAILED - 121)[0m
+[31m        投稿のtitleが表示される (FAILED - 122)[0m
+[31m        投稿のopinionが表示される (FAILED - 123)[0m
+[31m        投稿の編集リンクが表示されない (FAILED - 124)[0m
+[31m        投稿の削除リンクが表示されない (FAILED - 125)[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 121)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 122)[0m
-[31m        自分の名前と紹介文は表示されない (FAILED - 123)[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 124)[0m
+[31m        他人の名前と紹介文が表示される (FAILED - 126)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 127)[0m
+[31m        自分の名前と紹介文は表示されない (FAILED - 128)[0m
+[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 129)[0m
     他人の投稿編集画面
-[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 125)[0m
+[31m      遷移できず、投稿一覧画面にリダイレクトされる (FAILED - 130)[0m
     他人のユーザ詳細画面のテスト
       表示の確認
-[31m        URLが正しい (FAILED - 126)[0m
-[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 127)[0m
-[31m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい (FAILED - 128)[0m
-[31m        投稿一覧に他人の投稿のopinionが表示される (FAILED - 129)[0m
-[31m        自分の投稿は表示されない (FAILED - 130)[0m
+[31m        URLが正しい (FAILED - 131)[0m
+[31m        投稿一覧のユーザ画像のリンク先が正しい (FAILED - 132)[0m
+[31m        投稿一覧に他人の投稿のtitleが表示され、リンクが正しい (FAILED - 133)[0m
+[31m        投稿一覧に他人の投稿のopinionが表示される (FAILED - 134)[0m
+[31m        自分の投稿は表示されない (FAILED - 135)[0m
       サイドバーの確認
-[31m        他人の名前と紹介文が表示される (FAILED - 131)[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 132)[0m
-[31m        自分の名前と紹介文は表示されない (FAILED - 133)[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 134)[0m
+[31m        他人の名前と紹介文が表示される (FAILED - 136)[0m
+[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 137)[0m
+[31m        自分の名前と紹介文は表示されない (FAILED - 138)[0m
+[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 139)[0m
     他人のユーザ情報編集画面
-[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 135)[0m
+[31m      遷移できず、自分のユーザ詳細画面にリダイレクトされる (FAILED - 140)[0m
   グリッドシステムのテスト: container, row, col-md-〇を正しく使えている
-[31m    ユーザ一覧画面 (FAILED - 136)[0m
-[31m    ユーザ詳細画面 (FAILED - 137)[0m
-[31m    投稿一覧画面 (FAILED - 138)[0m
-[31m    投稿詳細画面 (FAILED - 139)[0m
+[31m    ユーザ一覧画面 (FAILED - 141)[0m
+[31m    ユーザ詳細画面 (FAILED - 142)[0m
+[31m    投稿一覧画面 (FAILED - 143)[0m
+[31m    投稿詳細画面 (FAILED - 144)[0m
   アイコンのテスト
     トップ画面
 [32m      本のアイコンが表示される[0m
     アバウト画面
-[31m      本のアイコンが表示される (FAILED - 140)[0m
+[32m      本のアイコンが表示される[0m
     ヘッダー: ログインしていない場合
 [32m      Homeリンクのアイコンが表示される[0m
 [32m      Aboutリンクのアイコンが表示される[0m
 [32m      Sign upリンクのアイコンが表示される[0m
 [32m      Log inリンクのアイコンが表示される[0m
     ヘッダー: ログインしている場合
-[31m      Homeリンクのアイコンが表示される (FAILED - 141)[0m
-[31m      Usersリンクのアイコンが表示される (FAILED - 142)[0m
-[31m      Booksリンクのアイコンが表示される (FAILED - 143)[0m
-[31m      Log outリンクのアイコンが表示される (FAILED - 144)[0m
+[31m      Homeリンクのアイコンが表示される (FAILED - 145)[0m
+[31m      Usersリンクのアイコンが表示される (FAILED - 146)[0m
+[31m      Booksリンクのアイコンが表示される (FAILED - 147)[0m
+[31m      Log outリンクのアイコンが表示される (FAILED - 148)[0m
     サイドバー
-[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 145)[0m
-[31m      ユーザ詳細画面でレンチアイコンが表示される (FAILED - 146)[0m
-[31m      投稿一覧画面でレンチアイコンが表示される (FAILED - 147)[0m
-[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 148)[0m
+[31m      ユーザ一覧画面でレンチアイコンが表示される (FAILED - 149)[0m
+[31m      ユーザ詳細画面でレンチアイコンが表示される (FAILED - 150)[0m
+[31m      投稿一覧画面でレンチアイコンが表示される (FAILED - 151)[0m
+[31m      投稿詳細画面でレンチアイコンが表示される (FAILED - 152)[0m
 
 Failures:
 
-  1) [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい
-     [31mFailure/Error: expect(current_path).to eq '/home/about'[0m
-     [31m[0m
-     [31m  expected: "/home/about"[0m
-     [31m       got: "/users/sign_in"[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [36m# ./spec/system/01_before_login_spec.rb:39:in `block (4 levels) in <main>'[0m
+  1) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 表示内容の確認 Sign upボタンが表示される
+     [31mFailure/Error: expect(page).to have_button 'Sign up'[0m
+     [31m  expected to find button "Sign up" that is not disabled but there were no matches[0m
+     [36m# ./spec/system/01_before_login_spec.rb:135:in `block (4 levels) in <main>'[0m
 
-  2) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する
-     [31mFailure/Error: is_expected.to eq '/home/about'[0m
+  2) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される
+     [31mFailure/Error: expect { click_button 'Sign up' }.to change(User.all, :count).by(1)[0m
      [31m[0m
-     [31m  expected: "/home/about"[0m
-     [31m       got: "/users/sign_in"[0m
-     [31m[0m
-     [31m  (compared using ==)[0m
-     [36m# ./spec/system/01_before_login_spec.rb:93:in `block (4 levels) in <main>'[0m
-
-  3) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される
-     [31mFailure/Error: fill_in 'user[name]', with: Faker::Lorem.characters(number: 10)[0m
-     [31m[0m
-     [31mCapybara::Ambiguous:[0m
-     [31m  Ambiguous match, found 2 elements matching visible field "user[name]" that is not disabled[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
+     [31mCapybara::ElementNotFound:[0m
+     [31m  Unable to find button "Sign up" that is not disabled[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:91:in `fill_in'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `fill_in'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:141:in `block (4 levels) in <main>'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
+     [36m# ./spec/system/01_before_login_spec.rb:148:in `block (5 levels) in <main>'[0m
+     [36m# ./spec/system/01_before_login_spec.rb:148:in `block (4 levels) in <main>'[0m
 
-  4) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている
-     [31mFailure/Error: fill_in 'user[name]', with: Faker::Lorem.characters(number: 10)[0m
+  3) [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている
+     [31mFailure/Error: click_button 'Sign up'[0m
      [31m[0m
-     [31mCapybara::Ambiguous:[0m
-     [31m  Ambiguous match, found 2 elements matching visible field "user[name]" that is not disabled[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
+     [31mCapybara::ElementNotFound:[0m
+     [31m  Unable to find button "Sign up" that is not disabled[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:91:in `fill_in'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `fill_in'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
-     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
-     [36m# ./spec/system/01_before_login_spec.rb:141:in `block (4 levels) in <main>'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
+     [36m# ./spec/system/01_before_login_spec.rb:151:in `block (4 levels) in <main>'[0m
 
-  5) [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 Log inボタンが表示される
+  4) [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 Log inボタンが表示される
      [31mFailure/Error: expect(page).to have_button 'Log in'[0m
      [31m  expected to find button "Log in" that is not disabled but there were no matches[0m
      [36m# ./spec/system/01_before_login_spec.rb:178:in `block (4 levels) in <main>'[0m
 
-  6) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている
+  5) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン成功のテスト ログイン後のリダイレクト先が、ログインしたユーザの詳細画面になっている
      [31mFailure/Error: click_button 'Log in'[0m
      [31m[0m
      [31mCapybara::ElementNotFound:[0m
@@ -353,7 +341,7 @@ Failures:
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
      [36m# ./spec/system/01_before_login_spec.rb:189:in `block (4 levels) in <main>'[0m
 
-  7) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン失敗のテスト ログインに失敗し、ログイン画面にリダイレクトされる
+  6) [STEP1] ユーザログイン前のテスト ユーザログイン ログイン失敗のテスト ログインに失敗し、ログイン画面にリダイレクトされる
      [31mFailure/Error: click_button 'Log in'[0m
      [31m[0m
      [31mCapybara::ElementNotFound:[0m
@@ -368,7 +356,7 @@ Failures:
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
      [36m# ./spec/system/01_before_login_spec.rb:201:in `block (4 levels) in <main>'[0m
 
-  8) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
+  7) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Bookersリンクが表示される: 左上から1番目のリンクが「Bookers」である
      [31mFailure/Error: click_button 'Log in'[0m
      [31m[0m
      [31mCapybara::ElementNotFound:[0m
@@ -383,7 +371,7 @@ Failures:
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
      [36m# ./spec/system/01_before_login_spec.rb:217:in `block (3 levels) in <main>'[0m
 
-  9) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
+  8) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Homeリンクが表示される: 左上から2番目のリンクが「Home」である
      [31mFailure/Error: click_button 'Log in'[0m
      [31m[0m
      [31mCapybara::ElementNotFound:[0m
@@ -398,7 +386,22 @@ Failures:
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
      [36m# ./spec/system/01_before_login_spec.rb:217:in `block (3 levels) in <main>'[0m
 
-  10) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である
+  9) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Usersリンクが表示される: 左上から3番目のリンクが「Users」である
+     [31mFailure/Error: click_button 'Log in'[0m
+     [31m[0m
+     [31mCapybara::ElementNotFound:[0m
+     [31m  Unable to find button "Log in" that is not disabled[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+     [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
+     [36m# ./spec/system/01_before_login_spec.rb:217:in `block (3 levels) in <main>'[0m
+
+  10) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -413,7 +416,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/01_before_login_spec.rb:217:in `block (3 levels) in <main>'[0m
 
-  11) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Booksリンクが表示される: 左上から4番目のリンクが「Books」である
+  11) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -428,22 +431,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/01_before_login_spec.rb:217:in `block (3 levels) in <main>'[0m
 
-  12) [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしている場合 ヘッダーの表示を確認 Log outリンクが表示される: 左上から5番目のリンクが「Log out」である
-      [31mFailure/Error: click_button 'Log in'[0m
-      [31m[0m
-      [31mCapybara::ElementNotFound:[0m
-      [31m  Unable to find button "Log in" that is not disabled[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
-      [36m# ./spec/system/01_before_login_spec.rb:217:in `block (3 levels) in <main>'[0m
-
-  13) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
+  12) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト 正しくログアウトできている: ログアウト後のリダイレクト先においてAbout画面へのリンクが存在する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -458,7 +446,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/01_before_login_spec.rb:251:in `block (3 levels) in <main>'[0m
 
-  14) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
+  13) [STEP1] ユーザログイン前のテスト ユーザログアウトのテスト ログアウト機能のテスト ログアウト後のリダイレクト先が、トップになっている
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -473,7 +461,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/01_before_login_spec.rb:251:in `block (3 levels) in <main>'[0m
 
-  15) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
+  14) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Homeを押すと、自分のユーザ詳細画面に遷移する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -488,7 +476,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  16) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
+  15) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Usersを押すと、ユーザ一覧画面に遷移する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -503,7 +491,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  17) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
+  16) [STEP2] ユーザログイン後のテスト ヘッダーのテスト: ログインしている場合 リンクの内容を確認: ※logoutは『ユーザログアウトのテスト』でテスト済みになります。 Booksを押すと、投稿一覧画面に遷移する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -518,7 +506,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  18) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 URLが正しい
+  17) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 URLが正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -533,7 +521,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  19) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
+  18) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分と他人の画像のリンク先が正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -548,7 +536,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  20) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
+  19) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のタイトルのリンク先がそれぞれ正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -563,7 +551,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  21) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
+  20) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 表示内容の確認 自分の投稿と他人の投稿のオピニオンが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -578,7 +566,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  22) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  21) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -593,7 +581,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  23) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  22) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -608,7 +596,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  24) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
+  23) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -623,7 +611,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  25) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
+  24) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -638,7 +626,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  26) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  25) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -653,7 +641,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  27) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームが表示される
+  26) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -668,7 +656,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  28) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  27) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -683,7 +671,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  29) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  28) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -698,7 +686,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  30) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
+  29) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -713,7 +701,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  31) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
+  30) [STEP2] ユーザログイン後のテスト 投稿一覧画面のテスト 投稿成功のテスト リダイレクト先が、保存できた投稿の詳細画面になっている
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -728,7 +716,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 URLが正しい
+  31) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 URLが正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -743,7 +731,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
+  32) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -758,7 +746,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  34) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
+  33) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -773,7 +761,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  35) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
+  34) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -788,7 +776,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  36) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のbodyが表示される
+  35) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿のbodyが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -803,7 +791,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  37) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
+  36) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -818,7 +806,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  38) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
+  37) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -833,7 +821,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  39) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  38) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -848,7 +836,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  40) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  39) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -863,7 +851,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  41) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
+  40) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -878,7 +866,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  42) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
+  41) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -893,7 +881,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  43) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  42) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -908,7 +896,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  44) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される
+  43) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -923,7 +911,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  45) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  44) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -938,7 +926,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  46) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  45) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -953,7 +941,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  47) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
+  46) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -968,7 +956,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  48) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
+  47) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 編集リンクのテスト 編集画面に遷移する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -983,7 +971,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  49) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
+  48) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト application.html.erbにjavascript_pack_tagを含んでいる
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -998,7 +986,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  50) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
+  49) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト 正しく削除される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1013,7 +1001,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  51) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
+  50) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 削除リンクのテスト リダイレクト先が、投稿一覧画面になっている
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1028,7 +1016,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  52) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 URLが正しい
+  51) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 URLが正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1043,7 +1031,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  53) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
+  52) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 「Editing Book」と表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1058,7 +1046,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  54) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
+  53) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 title編集フォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1073,7 +1061,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  55) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 body編集フォームが表示される
+  54) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 body編集フォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1088,7 +1076,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  56) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される
+  55) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Update Bookボタンが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1103,7 +1091,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  57) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
+  56) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Showリンクが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1118,7 +1106,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  58) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
+  57) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 表示の確認 Backリンクが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1133,7 +1121,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  59) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
+  58) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト titleが正しく更新される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1148,7 +1136,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  60) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
+  59) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト bodyが正しく更新される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1163,7 +1151,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  61) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
+  60) [STEP2] ユーザログイン後のテスト 自分の投稿編集画面のテスト 編集成功のテスト リダイレクト先が、更新した投稿の詳細画面になっている
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1178,7 +1166,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  62) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい
+  61) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 URLが正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1193,7 +1181,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  63) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
+  62) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の画像が表示される: fallbackの画像がサイドバーの1つ＋一覧(2人)の2つの計3つ存在する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1208,7 +1196,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  64) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される
+  63) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人の名前がそれぞれ表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1223,7 +1211,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  65) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
+  64) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト 表示内容の確認 自分と他人のshowリンクがそれぞれ表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1238,7 +1226,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  66) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  65) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1253,7 +1241,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  67) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  66) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1268,7 +1256,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  68) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
+  67) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1283,7 +1271,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  69) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
+  68) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1298,7 +1286,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  70) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  69) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1313,7 +1301,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  71) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームが表示される
+  70) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1328,7 +1316,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  72) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  71) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1343,7 +1331,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  73) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  72) [STEP2] ユーザログイン後のテスト ユーザ一覧画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1358,7 +1346,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  74) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい
+  73) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 URLが正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1373,7 +1361,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  75) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  74) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1388,7 +1376,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  76) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のtitleが表示され、リンクが正しい
+  75) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のtitleが表示され、リンクが正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1403,7 +1391,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  77) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のbodyが表示される
+  76) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 投稿一覧に自分の投稿のbodyが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1418,7 +1406,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  78) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 他人の投稿は表示されない
+  77) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト 表示の確認 他人の投稿は表示されない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1433,7 +1421,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  79) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
+  78) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文が表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1448,7 +1436,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  80) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
+  79) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクが存在する
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1463,7 +1451,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  81) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
+  80) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 「New book」と表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1478,7 +1466,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  82) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
+  81) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1493,7 +1481,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  83) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
+  82) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 titleフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1508,7 +1496,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  84) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームが表示される
+  83) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1523,7 +1511,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  85) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
+  84) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1538,7 +1526,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  86) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
+  85) [STEP2] ユーザログイン後のテスト 自分のユーザ詳細画面のテスト サイドバーの確認 Create Bookボタンが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1553,7 +1541,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  87) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
+  86) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 URLが正しい
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1568,7 +1556,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  88) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
+  87) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 名前編集フォームに自分の名前が表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1583,7 +1571,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  89) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
+  88) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 画像編集フォームが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1598,7 +1586,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  90) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
+  89) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 自己紹介編集フォームに自分の自己紹介文が表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1613,7 +1601,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  91) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
+  90) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 表示の確認 Update Userボタンが表示される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1628,7 +1616,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  92) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
+  91) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト nameが正しく更新される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1643,7 +1631,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  93) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
+  92) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト introductionが正しく更新される
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1658,7 +1646,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  94) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
+  93) [STEP2] ユーザログイン後のテスト 自分のユーザ情報編集画面のテスト 更新成功のテスト リダイレクト先が、自分のユーザ詳細画面になっている
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1673,22 +1661,22 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/02_after_login_spec.rb:13:in `block (2 levels) in <main>'[0m
 
-  95) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
-      [31mFailure/Error: fill_in 'user[name]', with: Faker::Lorem.characters(number: 9)[0m
+  94) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザ新規登録成功時
+      [31mFailure/Error: click_button 'Sign up'[0m
       [31m[0m
-      [31mCapybara::Ambiguous:[0m
-      [31m  Ambiguous match, found 2 elements matching visible field "user[name]" that is not disabled[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find button "Sign up" that is not disabled[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:91:in `fill_in'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `fill_in'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
-      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:14:in `block (3 levels) in <main>'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:18:in `block (3 levels) in <main>'[0m
 
-  96) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時
+  95) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログイン成功時
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1703,7 +1691,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:25:in `block (3 levels) in <main>'[0m
 
-  97) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
+  96) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザログアウト成功時
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1718,7 +1706,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:32:in `block (3 levels) in <main>'[0m
 
-  98) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
+  97) [STEP3] 仕上げのテスト サクセスメッセージのテスト ユーザのプロフィール情報更新成功時
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1733,7 +1721,7 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:42:in `block (3 levels) in <main>'[0m
 
-  99) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
+  98) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの新規投稿成功時: 投稿一覧画面から行います。
       [31mFailure/Error: click_button 'Log in'[0m
       [31m[0m
       [31mCapybara::ElementNotFound:[0m
@@ -1748,11 +1736,26 @@ Failures:
       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
       [36m# ./spec/system/03_finishing_touches_spec.rb:51:in `block (3 levels) in <main>'[0m
 
-  100) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
-       [31mFailure/Error: click_button 'Log in'[0m
+  99) [STEP3] 仕上げのテスト サクセスメッセージのテスト 投稿データの更新成功時
+      [31mFailure/Error: click_button 'Log in'[0m
+      [31m[0m
+      [31mCapybara::ElementNotFound:[0m
+      [31m  Unable to find button "Log in" that is not disabled[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
+      [36m# ./spec/system/03_finishing_touches_spec.rb:62:in `block (3 levels) in <main>'[0m
+
+  100) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録されない
+       [31mFailure/Error: expect { click_button 'Sign up' }.not_to change(User.all, :count)[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
-       [31m  Unable to find button "Log in" that is not disabled[0m
+       [31m  Unable to find button "Sign up" that is not disabled[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
@@ -1761,58 +1764,14 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:62:in `block (3 levels) in <main>'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:82:in `block (5 levels) in <main>'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:82:in `block (4 levels) in <main>'[0m
 
-  101) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録されない
-       [31mFailure/Error: fill_in 'user[name]', with: @name[0m
-       [31m[0m
-       [31mCapybara::Ambiguous:[0m
-       [31m  Ambiguous match, found 2 elements matching visible field "user[name]" that is not disabled[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:91:in `fill_in'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `fill_in'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:75:in `block (4 levels) in <main>'[0m
-
-  102) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録画面を表示しており、フォームの内容が正しい
-       [31mFailure/Error: fill_in 'user[name]', with: @name[0m
-       [31m[0m
-       [31mCapybara::Ambiguous:[0m
-       [31m  Ambiguous match, found 2 elements matching visible field "user[name]" that is not disabled[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:91:in `fill_in'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `fill_in'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:75:in `block (4 levels) in <main>'[0m
-
-  103) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする バリデーションエラーが表示される
-       [31mFailure/Error: fill_in 'user[name]', with: @name[0m
-       [31m[0m
-       [31mCapybara::Ambiguous:[0m
-       [31m  Ambiguous match, found 2 elements matching visible field "user[name]" that is not disabled[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:310:in `block in synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:91:in `fill_in'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `fill_in'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
-       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `fill_in'[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:75:in `block (4 levels) in <main>'[0m
-
-  104) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする 更新されない
-       [31mFailure/Error: click_button 'Log in'[0m
+  101) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする 新規登録画面を表示しており、フォームの内容が正しい
+       [31mFailure/Error: click_button 'Sign up'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
-       [31m  Unable to find button "Log in" that is not disabled[0m
+       [31m  Unable to find button "Sign up" that is not disabled[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
@@ -1821,9 +1780,24 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:103:in `block (4 levels) in <main>'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:85:in `block (4 levels) in <main>'[0m
 
-  105) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
+  102) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザ新規登録失敗: nameを1文字にする バリデーションエラーが表示される
+       [31mFailure/Error: click_button 'Sign up'[0m
+       [31m[0m
+       [31mCapybara::ElementNotFound:[0m
+       [31m  Unable to find button "Sign up" that is not disabled[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:91:in `block (4 levels) in <main>'[0m
+
+  103) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする 更新されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1838,7 +1812,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:103:in `block (4 levels) in <main>'[0m
 
-  106) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
+  104) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする ユーザ編集画面を表示しており、フォームの内容が正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1853,7 +1827,22 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:103:in `block (4 levels) in <main>'[0m
 
-  107) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿が保存されない
+  105) [STEP3] 仕上げのテスト 処理失敗時のテスト ユーザのプロフィール情報編集失敗: nameを1文字にする バリデーションエラーが表示される
+       [31mFailure/Error: click_button 'Log in'[0m
+       [31m[0m
+       [31mCapybara::ElementNotFound:[0m
+       [31m  Unable to find button "Log in" that is not disabled[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:312:in `block in synced_resolve'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/base.rb:84:in `synchronize'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:301:in `synced_resolve'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/finders.rb:60:in `find'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/node/actions.rb:58:in `click_button'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:773:in `click_button'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:103:in `block (4 levels) in <main>'[0m
+
+  106) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿が保存されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1868,7 +1857,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:125:in `block (4 levels) in <main>'[0m
 
-  108) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
+  107) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 投稿一覧画面を表示している
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1883,7 +1872,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:125:in `block (4 levels) in <main>'[0m
 
-  109) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 新規投稿フォームの内容が正しい
+  108) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする 新規投稿フォームの内容が正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1898,7 +1887,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:125:in `block (4 levels) in <main>'[0m
 
-  110) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される
+  109) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの新規投稿失敗: 投稿一覧画面から行い、titleを空にする バリデーションエラーが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1913,7 +1902,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:125:in `block (4 levels) in <main>'[0m
 
-  111) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿が更新されない
+  110) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿が更新されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1928,7 +1917,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:155:in `block (4 levels) in <main>'[0m
 
-  112) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
+  111) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1943,7 +1932,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:155:in `block (4 levels) in <main>'[0m
 
-  113) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
+  112) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1958,7 +1947,271 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:155:in `block (4 levels) in <main>'[0m
 
-  114) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 URLが正しい
+  113) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ一覧画面
+       [31mFailure/Error: <%= image_tag current_user.get_profile_image(100,100) %>[0m
+       [31m[0m
+       [31mActionView::Template::Error:[0m
+       [31m  undefined method `get_profile_image' for nil:NilClass[0m
+       [36m# ./app/views/books/_list.html.erb:6:in `_app_views_books__list_html_erb__1292737607311767301_49380'[0m
+       [36m# ./app/views/users/index.html.erb:1:in `_app_views_users_index_html_erb__565122270731631319_49360'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/conditional_get.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:37:in `call_app'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/engine.rb:539:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:74:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `each'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/builder.rb:244:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:80:in `process'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:280:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `visit'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:180:in `block (3 levels) in <main>'[0m
+       [36m# ------------------[0m
+       [36m# --- Caused by: ---[0m
+       [36m# NoMethodError:[0m
+       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
+       [36m#   ./app/views/books/_list.html.erb:6:in `_app_views_books__list_html_erb__1292737607311767301_49380'[0m
+
+  114) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面
+       [31mFailure/Error: <%= image_tag current_user.get_profile_image(100,100) %>[0m
+       [31m[0m
+       [31mActionView::Template::Error:[0m
+       [31m  undefined method `get_profile_image' for nil:NilClass[0m
+       [36m# ./app/views/users/_list.html.erb:7:in `_app_views_users__list_html_erb___1805190529204640374_49660'[0m
+       [36m# ./app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb__1663441966744659717_49640'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/conditional_get.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:37:in `call_app'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/engine.rb:539:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:74:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `each'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/builder.rb:244:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:80:in `process'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:280:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `visit'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:184:in `block (3 levels) in <main>'[0m
+       [36m# ------------------[0m
+       [36m# --- Caused by: ---[0m
+       [36m# NoMethodError:[0m
+       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
+       [36m#   ./app/views/users/_list.html.erb:7:in `_app_views_users__list_html_erb___1805190529204640374_49660'[0m
+
+  115) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ情報編集画面
+       [31mFailure/Error: unless user.id == current_user.id  # 2. ログインしているユーザーのidをcurrent_user.idで取得[0m
+       [31m[0m
+       [31mNoMethodError:[0m
+       [31m  undefined method `id' for nil:NilClass[0m
+       [36m# ./app/controllers/users_controller.rb:48:in `is_matching_login_user'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/conditional_get.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:37:in `call_app'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/engine.rb:539:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:74:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `each'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/builder.rb:244:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:80:in `process'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:280:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `visit'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:188:in `block (3 levels) in <main>'[0m
+
+  116) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿一覧画面
+       [31mFailure/Error: <%= image_tag current_user.get_profile_image(100,100) %>[0m
+       [31m[0m
+       [31mActionView::Template::Error:[0m
+       [31m  undefined method `get_profile_image' for nil:NilClass[0m
+       [36m# ./app/views/books/_list.html.erb:6:in `_app_views_books__list_html_erb__1292737607311767301_49380'[0m
+       [36m# ./app/views/books/index.html.erb:1:in `_app_views_books_index_html_erb___1722013138286489822_50220'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/conditional_get.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:37:in `call_app'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/engine.rb:539:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:74:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `each'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/builder.rb:244:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:80:in `process'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:280:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `visit'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:192:in `block (3 levels) in <main>'[0m
+       [36m# ------------------[0m
+       [36m# --- Caused by: ---[0m
+       [36m# NoMethodError:[0m
+       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
+       [36m#   ./app/views/books/_list.html.erb:6:in `_app_views_books__list_html_erb__1292737607311767301_49380'[0m
+
+  117) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿詳細画面
+       [31mFailure/Error: <%= image_tag current_user.get_profile_image(100,100) %>[0m
+       [31m[0m
+       [31mActionView::Template::Error:[0m
+       [31m  undefined method `get_profile_image' for nil:NilClass[0m
+       [36m# ./app/views/books/_list.html.erb:6:in `_app_views_books__list_html_erb__1292737607311767301_49380'[0m
+       [36m# ./app/views/books/show.html.erb:1:in `_app_views_books_show_html_erb___1844406881643458968_50480'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/conditional_get.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:37:in `call_app'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/engine.rb:539:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:74:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `each'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/builder.rb:244:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:80:in `process'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:280:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `visit'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:196:in `block (3 levels) in <main>'[0m
+       [36m# ------------------[0m
+       [36m# --- Caused by: ---[0m
+       [36m# NoMethodError:[0m
+       [36m#   undefined method `get_profile_image' for nil:NilClass[0m
+       [36m#   ./app/views/books/_list.html.erb:6:in `_app_views_books__list_html_erb__1292737607311767301_49380'[0m
+
+  118) [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿編集画面
+       [31mFailure/Error: unless book.user.id == current_user.id  # 2. ブックに紐づくユーザーの取得とログインしているユーザーのidをcurrent_user.idで取得[0m
+       [31m[0m
+       [31mNoMethodError:[0m
+       [31m  undefined method `id' for nil:NilClass[0m
+       [36m# ./app/controllers/books_controller.rb:78:in `is_matching_login_user'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/tempfile_reaper.rb:15:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/etag.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/conditional_get.rb:27:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/head.rb:12:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:266:in `context'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/session/abstract/id.rb:260:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:37:in `call_app'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/rack/logger.rb:26:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/method_override.rb:24:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/runtime.rb:22:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/sendfile.rb:110:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/railties-6.1.7.4/lib/rails/engine.rb:539:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:74:in `block in call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `each'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/urlmap.rb:58:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-2.2.8/lib/rack/builder.rb:244:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:360:in `process_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:163:in `custom_request'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/rack-test-2.1.0/lib/rack/test.rb:112:in `get'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:80:in `process'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:55:in `process_and_follow_redirects'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/browser.rb:26:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/rack_test/driver.rb:46:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/session.rb:280:in `visit'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `call'[0m
+       [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `visit'[0m
+       [36m# ./spec/system/03_finishing_touches_spec.rb:200:in `block (3 levels) in <main>'[0m
+
+  119) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 URLが正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1973,7 +2226,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  115) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
+  120) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -1988,7 +2241,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  116) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
+  121) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2003,7 +2256,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  117) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
+  122) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のtitleが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2018,7 +2271,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  118) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される
+  123) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿のopinionが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2033,7 +2286,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  119) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない
+  124) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2048,7 +2301,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  120) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示されない
+  125) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の削除リンクが表示されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2063,7 +2316,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  121) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
+  126) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2078,7 +2331,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  122) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+  127) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2093,7 +2346,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  123) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
+  128) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2108,7 +2361,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  124) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
+  129) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2123,7 +2376,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  125) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
+  130) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿編集画面 遷移できず、投稿一覧画面にリダイレクトされる
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2138,7 +2391,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  126) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 URLが正しい
+  131) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 URLが正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2153,7 +2406,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  127) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
+  132) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧のユーザ画像のリンク先が正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2168,7 +2421,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  128) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のtitleが表示され、リンクが正しい
+  133) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のtitleが表示され、リンクが正しい
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2183,7 +2436,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  129) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のopinionが表示される
+  134) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 投稿一覧に他人の投稿のopinionが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2198,7 +2451,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  130) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 自分の投稿は表示されない
+  135) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト 表示の確認 自分の投稿は表示されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2213,7 +2466,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  131) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
+  136) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人の名前と紹介文が表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2228,7 +2481,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  132) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
+  137) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2243,7 +2496,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  133) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
+  138) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分の名前と紹介文は表示されない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2258,7 +2511,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  134) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
+  139) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2273,7 +2526,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  135) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
+  140) [STEP3] 仕上げのテスト 他人の画面のテスト 他人のユーザ情報編集画面 遷移できず、自分のユーザ詳細画面にリダイレクトされる
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2288,7 +2541,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:210:in `block (3 levels) in <main>'[0m
 
-  136) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
+  141) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ一覧画面
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2303,7 +2556,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:330:in `block (3 levels) in <main>'[0m
 
-  137) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
+  142) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2318,7 +2571,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:330:in `block (3 levels) in <main>'[0m
 
-  138) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
+  143) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2333,7 +2586,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:330:in `block (3 levels) in <main>'[0m
 
-  139) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
+  144) [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2348,12 +2601,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:330:in `block (3 levels) in <main>'[0m
 
-  140) [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される
-       [31mFailure/Error: is_expected.to have_selector '.fa-solid.fa-book, .fas.fa-book'[0m
-       [31m  expected to find css ".fa-solid.fa-book, .fas.fa-book" but there were no matches[0m
-       [36m# ./spec/system/03_finishing_touches_spec.rb:376:in `block (4 levels) in <main>'[0m
-
-  141) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される
+  145) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2368,7 +2616,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:408:in `block (4 levels) in <main>'[0m
 
-  142) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される
+  146) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2383,7 +2631,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:408:in `block (4 levels) in <main>'[0m
 
-  143) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される
+  147) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2398,7 +2646,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:408:in `block (4 levels) in <main>'[0m
 
-  144) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Log outリンクのアイコンが表示される
+  148) [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Log outリンクのアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2413,7 +2661,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:408:in `block (4 levels) in <main>'[0m
 
-  145) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
+  149) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ一覧画面でレンチアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2428,7 +2676,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:432:in `block (4 levels) in <main>'[0m
 
-  146) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される
+  150) [STEP3] 仕上げのテスト アイコンのテスト サイドバー ユーザ詳細画面でレンチアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2443,7 +2691,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:432:in `block (4 levels) in <main>'[0m
 
-  147) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される
+  151) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿一覧画面でレンチアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2458,7 +2706,7 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:432:in `block (4 levels) in <main>'[0m
 
-  148) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
+  152) [STEP3] 仕上げのテスト アイコンのテスト サイドバー 投稿詳細画面でレンチアイコンが表示される
        [31mFailure/Error: click_button 'Log in'[0m
        [31m[0m
        [31mCapybara::ElementNotFound:[0m
@@ -2473,13 +2721,12 @@ Failures:
        [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/capybara-3.39.2/lib/capybara/dsl.rb:52:in `click_button'[0m
        [36m# ./spec/system/03_finishing_touches_spec.rb:432:in `block (4 levels) in <main>'[0m
 
-Finished in 11.67 seconds (files took 1.59 seconds to load)
-[31m199 examples, 148 failures[0m
+Finished in 11.15 seconds (files took 1.91 seconds to load)
+[31m199 examples, 152 failures[0m
 
 Failed examples:
 
-[31mrspec ./spec/system/01_before_login_spec.rb:38[0m [36m# [STEP1] ユーザログイン前のテスト アバウト画面のテスト 表示内容の確認 URLが正しい[0m
-[31mrspec ./spec/system/01_before_login_spec.rb:89[0m [36m# [STEP1] ユーザログイン前のテスト ヘッダーのテスト: ログインしていない場合 リンクの内容を確認 Aboutを押すと、アバウト画面に遷移する[0m
+[31mrspec ./spec/system/01_before_login_spec.rb:134[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 表示内容の確認 Sign upボタンが表示される[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:147[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 正しく新規登録される[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:150[0m [36m# [STEP1] ユーザログイン前のテスト ユーザ新規登録のテスト 新規登録成功のテスト 新規登録後のリダイレクト先が、新規登録できたユーザの詳細画面になっている[0m
 [31mrspec ./spec/system/01_before_login_spec.rb:177[0m [36m# [STEP1] ユーザログイン前のテスト ユーザログイン 表示内容の確認 Log inボタンが表示される[0m
@@ -2591,6 +2838,12 @@ Failed examples:
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:162[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿が更新されない[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:165[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:170[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:179[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ一覧画面[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:183[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ詳細画面[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:187[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する ユーザ情報編集画面[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:191[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿一覧画面[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:195[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿詳細画面[0m
+[31mrspec ./spec/system/03_finishing_touches_spec.rb:199[0m [36m# [STEP3] 仕上げのテスト ログインしていない場合のアクセス制限のテスト: アクセスできず、ログイン画面に遷移する 投稿編集画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:219[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 URLが正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:222[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 「Book detail」と表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:225[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 ユーザ画像・名前のリンク先が正しい[0m
@@ -2617,7 +2870,6 @@ Failed examples:
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:338[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている ユーザ詳細画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:343[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿一覧画面[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:348[0m [36m# [STEP3] 仕上げのテスト グリッドシステムのテスト: container, row, col-md-〇を正しく使えている 投稿詳細画面[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:375[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト アバウト画面 本のアイコンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:411[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Homeリンクのアイコンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:414[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Usersリンクのアイコンが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:417[0m [36m# [STEP3] 仕上げのテスト アイコンのテスト ヘッダー: ログインしている場合 Booksリンクのアイコンが表示される[0m
