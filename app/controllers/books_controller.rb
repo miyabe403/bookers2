@@ -42,7 +42,7 @@ class BooksController < ApplicationController
     if book.update(book_params)  # 3. データが入力されていればデータをデータベースに保存するためのupdateメソッド実行
       # 4. フラッシュメッセージを定義し、詳細画面へリダイレクト
       flash[:notice] = "successfully"
-      redirect_to book_path(book.id)  # 「転送したいアクションへのURL」を指定します。
+      redirect_to book_path(book.id)  # 「転送したいアクションへのURL」を指定します。 
     else  # データが入力されていなければ、saveメソッドでfalseが返されます。
       # 4. flash.nowでフラッシュメッセージを定義し、new.html.erbを描画する
       flash.now[:alert] = "errors"  #キーをalertに変更
