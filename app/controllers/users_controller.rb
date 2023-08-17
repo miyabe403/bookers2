@@ -10,7 +10,7 @@ class UsersController < ApplicationController
    @book = Book.new  # 部分テンプレートを呼び出すときに空の変数を用意 
   end
 
-  def show
+  def show 
    @user = User.find(params[:id])
    @books = @user.books
    @book = Book.new # 部分テンプレートを呼び出すときに空の変数を用意 
