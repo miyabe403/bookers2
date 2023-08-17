@@ -1,4 +1,9 @@
 class BooksController < ApplicationController
+  # メソッドとして処理をまとめたことで、before_actionを使用することができます。
+  # before_actionは、コントローラーで各アクションを実行する前に実行したい処理を指定することができるメソッドです。
+  # 実行したい処理は、メソッドとしてまとめることで実行できます。
+  before_action :is_matching_login_user, only: [:edit, :update]
+  
   def new
     @book = Book.new
   end
@@ -9,9 +14,12 @@ class BooksController < ApplicationController
     @book.user_id = current_user.id  # 空のモデルでは、"[モデル名].[カラム名]"という形で、保存する。 current_user は、ログイン中のユーザー情報を取得することができる
 
     if @book.save
+      flash[:notice] = "successfully" 
       redirect_to book_path(@book.id) #current_user.id では無く@book.idを指定する
     else
-      render :new 
+      # flash.now[:alert] = "errors"  #キーをalertに変更
+      @books = Book.all #バリテーションのエラーメッセージを表示用に使用する一覧データ取得用の変数
+      render :index #render の遷移先を index に変更 
     end
   end
  
@@ -64,4 +72,11 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(:title, :body)  # ストロングパラメータの不要な image を削除
   end 
+  
+  def is_matching_login_user
+    book = Book.find(params[:id])  # 1. URLに含まれるブックidをparams[:id]で取得
+    unless book.user.id == current_user.id  # 2. ブックに紐づくユーザーの取得とログインしているユーザーのidをcurrent_user.idで取得
+      redirect_to books_path  # 3. 1と2のidが一致していなかった場合、 投稿一覧にリダイレクトする
+    end
+  end
 end

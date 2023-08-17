@@ -1,11 +1,17 @@
 <p id="notice"></p>
-<div class="container px-5 px-sm-0">
+<% if @book.errors.any? %>
+      <%= @book.errors.count %>件のエラーが発生しました
+  <ul>
+    <% @book.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+<div class="container px-5 px-sm-0"> 
   <div class="row">
     <div class="col-md-3">
-<%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
+<%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %> 
       <h2 class="mt-3">Editing Book</h2>
-      <form action="/books" accept-charset="UTF-8" method="post">
-        <input type="hidden" name="authenticity_token" autocomplete="off"></input>
         <div class="form-group">
           <%= f.label :Title %>
           <%= f.text_field :title, class:"form-control book_title" %>
