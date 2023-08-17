@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # 実行したい処理は、メソッドとしてまとめることで実行できます。
   # before_action :is_matching_login_user, only: [:edit, :update]
   
-  def index
+  def index 
    @user = User.all 
    @users = User.all
    @book = Book.new  # 部分テンプレートを呼び出すときに空の変数を用意 
