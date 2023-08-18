@@ -238,9 +238,9 @@ Userモデルのテスト
 [32m        投稿の削除リンクが表示されない[0m
       サイドバーの確認
 [32m        他人の名前と紹介文が表示される[0m
-[31m        他人のユーザ編集画面へのリンクが存在する (FAILED - 9)[0m
+[32m        他人のユーザ編集画面へのリンクが存在する[0m
 [32m        自分の名前と紹介文は表示されない[0m
-[31m        自分のユーザ編集画面へのリンクは存在しない (FAILED - 10)[0m
+[32m        自分のユーザ編集画面へのリンクは存在しない[0m
     他人の投稿編集画面
 [32m      遷移できず、投稿一覧画面にリダイレクトされる[0m
     他人のユーザ詳細画面のテスト
@@ -287,7 +287,7 @@ Failures:
 
   1) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト サイドバーの確認 bodyフォームに値が入っていない
      [31mFailure/Error: expect(find_field('book[body]').text).to be_blank[0m
-     [31m  expected `"r8pq317ioa8zu74n0i0y".blank?` to be truthy, got false[0m
+     [31m  expected `"uthe14a1lf8dg0ymkc0x".blank?` to be truthy, got false[0m
      [36m# ./spec/system/02_after_login_spec.rb:158:in `block (4 levels) in <main>'[0m
 
   2) [STEP2] ユーザログイン後のテスト 自分の投稿詳細画面のテスト 投稿成功のテスト 自分の新しい投稿が正しく保存される
@@ -353,7 +353,7 @@ Failures:
      [31m[0m
      [31mActionView::Template::Error:[0m
      [31m  No route matches {:action=>"show", :controller=>"books", :id=>nil}, missing required keys: [:id][0m
-     [36m# ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__160206934883639620_44020'[0m
+     [36m# ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__1585128507838793832_43980'[0m
      [36m# ./app/controllers/books_controller.rb:59:in `update'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -401,14 +401,14 @@ Failures:
      [36m# --- Caused by: ---[0m
      [36m# ActionController::UrlGenerationError:[0m
      [36m#   No route matches {:action=>"show", :controller=>"books", :id=>nil}, missing required keys: [:id][0m
-     [36m#   ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__160206934883639620_44020'[0m
+     [36m#   ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__1585128507838793832_43980'[0m
 
   6) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい
      [31mFailure/Error: <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>[0m
      [31m[0m
      [31mActionView::Template::Error:[0m
      [31m  No route matches {:action=>"show", :controller=>"books", :id=>nil}, missing required keys: [:id][0m
-     [36m# ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__160206934883639620_44020'[0m
+     [36m# ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__1585128507838793832_43980'[0m
      [36m# ./app/controllers/books_controller.rb:59:in `update'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -456,14 +456,14 @@ Failures:
      [36m# --- Caused by: ---[0m
      [36m# ActionController::UrlGenerationError:[0m
      [36m#   No route matches {:action=>"show", :controller=>"books", :id=>nil}, missing required keys: [:id][0m
-     [36m#   ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__160206934883639620_44020'[0m
+     [36m#   ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__1585128507838793832_43980'[0m
 
   7) [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される
      [31mFailure/Error: <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>[0m
      [31m[0m
      [31mActionView::Template::Error:[0m
      [31m  No route matches {:action=>"show", :controller=>"books", :id=>nil}, missing required keys: [:id][0m
-     [36m# ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__160206934883639620_44020'[0m
+     [36m# ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__1585128507838793832_43980'[0m
      [36m# ./app/controllers/books_controller.rb:59:in `update'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/rendering.rb:20:in `with_renderer'[0m
      [36m# /home/ec2-user/.rvm/gems/ruby-3.1.2/gems/actiontext-6.1.7.4/lib/action_text/engine.rb:59:in `block (4 levels) in <class:Engine>'[0m
@@ -511,25 +511,15 @@ Failures:
      [36m# --- Caused by: ---[0m
      [36m# ActionController::UrlGenerationError:[0m
      [36m#   No route matches {:action=>"show", :controller=>"books", :id=>nil}, missing required keys: [:id][0m
-     [36m#   ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__160206934883639620_44020'[0m
+     [36m#   ./app/views/books/edit.html.erb:13:in `_app_views_books_edit_html_erb__1585128507838793832_43980'[0m
 
   8) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない
      [31mFailure/Error: expect(page).not_to have_link 'Edit'[0m
      [31m  expected not to find visible link "Edit", found 1 match: "Edit"[0m
      [36m# ./spec/system/03_finishing_touches_spec.rb:235:in `block (5 levels) in <main>'[0m
 
-  9) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する
-     [31mFailure/Error: expect(page).to have_link '', href: edit_user_path(other_user)[0m
-     [31m  expected to find link "" with href "/users/2/edit" but there were no matches[0m
-     [36m# ./spec/system/03_finishing_touches_spec.rb:248:in `block (5 levels) in <main>'[0m
-
-  10) [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない
-      [31mFailure/Error: expect(page).not_to have_link '', href: edit_user_path(user)[0m
-      [31m  expected not to find visible link "" with href "/users/1/edit", found 1 match: "Edit"[0m
-      [36m# ./spec/system/03_finishing_touches_spec.rb:255:in `block (5 levels) in <main>'[0m
-
-Finished in 50.18 seconds (files took 3.33 seconds to load)
-[31m199 examples, 10 failures[0m
+Finished in 49.07 seconds (files took 1.76 seconds to load)
+[31m199 examples, 8 failures[0m
 
 Failed examples:
 
@@ -541,6 +531,4 @@ Failed examples:
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:165[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする 投稿編集画面を表示しており、フォームの内容が正しい[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:170[0m [36m# [STEP3] 仕上げのテスト 処理失敗時のテスト 投稿データの更新失敗: titleを空にする エラーメッセージが表示される[0m
 [31mrspec ./spec/system/03_finishing_touches_spec.rb:234[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト 表示内容の確認 投稿の編集リンクが表示されない[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:247[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 他人のユーザ編集画面へのリンクが存在する[0m
-[31mrspec ./spec/system/03_finishing_touches_spec.rb:254[0m [36m# [STEP3] 仕上げのテスト 他人の画面のテスト 他人の投稿詳細画面のテスト サイドバーの確認 自分のユーザ編集画面へのリンクは存在しない[0m
 
