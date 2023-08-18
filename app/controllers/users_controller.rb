@@ -46,7 +46,7 @@ class UsersController < ApplicationController
   def is_matching_login_user
     user = User.find(params[:id])  # 1. URLに含まれるユーザーidをparams[:id]で取得
     unless user.id == current_user.id  # 2. ログインしているユーザーのidをcurrent_user.idで取得
-      redirect_to books_path  # 3. 1と2のidが一致していなかった場合、 投稿一覧にリダイレクトする
+      redirect_to user_path(current_user)  # 3. 1と2のidが一致していなかった場合、 投稿一覧にリダイレクトする　
     end
   end
 end
