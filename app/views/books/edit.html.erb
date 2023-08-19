@@ -1,6 +1,6 @@
 <p id="notice"></p>
 <% if @book.errors.any? %>
-      <%= @book.errors.count %>error
+      <%= @book.errors.count %>error 
   <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
