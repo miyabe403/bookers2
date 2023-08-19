@@ -30,30 +30,33 @@ class BooksController < ApplicationController
   end
  
   def show
-    @book_new = Book.new # 空のインスタンスを用意 投稿formの表示に使用
+    @book_new = Book.new #空のインスタンスを用意 formの中身を空にする用
     @book = Book.find(params[:id])
-  end　
+  end
 
   def edit 
     @book = Book.find(params[:id]) 
+    @user = current_user
+    if @book.user != @user # ブックのユーザと現在のユーザが等しくないとき
+      redirect_to books_path # 投稿一覧へ遷移する
+    end
   end
    
   def update
-    book = Book.find(params[:id])
+    @book = Book.find(params[:id])
     # book.update(book_params)
     # redirect_to book_path(book.id)
     
-    if book.update(book_params)  # 3. データが入力されていればデータをデータベースに保存するためのupdateメソッド実行
+    if @book.update(book_params)  # 3. データが入力されていればデータをデータベースに保存するためのupdateメソッド実行
       # 4. フラッシュメッセージを定義し、詳細画面へリダイレクト
       flash[:notice] = "successfully"
-      redirect_to book_path(book.id)  # 「転送したいアクションへのURL」を指定します。 
+      redirect_to book_path(@book.id)  # 「転送したいアクションへのURL」を指定します。 
     else  # データが入力されていなければ、saveメソッドでfalseが返されます。
       # 4. flash.nowでフラッシュメッセージを定義し、new.html.erbを描画する
-      flash.now[:alert] = "errors"  #キーをalertに変更
-      @books = Book.all
-      @book = Book.new
+      # flash.now[:alert] = "errors"  #キーをalertに変更
+      @book = @book # 更新途中のデータを格納する
       render :edit  #  render :アクション名で、同じコントローラ内の別アクションのViewを表示できます。　
-    end
+    end 
   end
   
   def destroy 
