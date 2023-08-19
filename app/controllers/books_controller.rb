@@ -30,16 +30,12 @@ class BooksController < ApplicationController
   end
  
   def show
-    @book = Book.new #空のインスタンスを用意 
-    @books = Book.all
-  end
+    @book_new = Book.new # 空のインスタンスを用意 投稿formの表示に使用
+    @book = Book.find(params[:id])
+  end　
 
   def edit 
     @book = Book.find(params[:id]) 
-  end
-  
-  def show
-    @book = Book.find(params[:id])
   end
    
   def update
