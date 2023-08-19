@@ -37,7 +37,7 @@ class BooksController < ApplicationController
   def edit 
     @book = Book.find(params[:id]) 
     @user = current_user
-    if @book.user != @user # ブックのユーザと現在のユーザが等しくないとき
+    if @book.user != @user # ブックのユーザと現在のユーザが等しくないとき 
       redirect_to books_path # 投稿一覧へ遷移する
     end
   end
