@@ -54,7 +54,7 @@ class BooksController < ApplicationController
     else  # データが入力されていなければ、saveメソッドでfalseが返されます。
       # 4. flash.nowでフラッシュメッセージを定義し、new.html.erbを描画する
       # flash.now[:alert] = "errors"  #キーをalertに変更
-      @book = @book # 更新途中のデータを格納する
+      @book = @book # 更新途中のデータを格納する　
       render :edit  #  render :アクション名で、同じコントローラ内の別アクションのViewを表示できます。　
     end 
   end
