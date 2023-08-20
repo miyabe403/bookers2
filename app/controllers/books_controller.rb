@@ -34,7 +34,7 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
   end
 
-  def edit
+  def edit 
     @book = Book.find(params[:id]) 
     @user = current_user
     if @book.user != @user # ブックのユーザと現在のユーザが等しくないとき 
