@@ -1,5 +1,5 @@
 <%= render 'list', book: @book %> <!-- 部分テンプレートを呼び出すときに空の変数を用意して代入する -->
-<% if @book.errors.any? %>
+<% if @book.errors.any? %> 
     <%= @book.errors.count %>件のエラーが発生しました
   <ul>
     <% @book.errors.full_messages.each do |message| %>
