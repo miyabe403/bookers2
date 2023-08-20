@@ -24,13 +24,13 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
   
-  def update 
+  def update
     @user = User.find(params[:id])
     
     if @user.update(user_params)
       flash[:notice] = "successfully"
       redirect_to user_path(@user.id) #current_user.id では無く@user.idを指定する
-    else
+    else 
       # flash.now[:alert] = "errors"  #キーをalertに変更
       @users = User.all
       render :edit
