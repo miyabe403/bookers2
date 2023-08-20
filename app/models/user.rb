@@ -11,7 +11,7 @@ class User < ApplicationRecord
   # profile_imageという名前でActiveStorageでプロフィール画像を保存
   has_one_attached :profile_image
   
-  validates :name, length: { in: 2..20 }, presence: true, uniqueness: true # name：一意性を持たせ、かつ2～20文字の範囲で設定 
+  validates :name, length: { in: 2..20 }, presence: true, uniqueness: true # name：一意性を持たせ、かつ2～20文字の範囲で設定
   validates :introduction, length: { maximum: 50 } # introduction：最大50文字までに設定 0~50文字なので空白でも登録可能 presence（存在)の記述は不要
   # get_profile_image で既に画像がない場合に画像を用意する指定がされているので、profile_image のバリデーションは不要
   
