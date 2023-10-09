@@ -1,3 +1,10 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+// 背景画像を表示できるようにする
+// デプロイ時にassets:precompile（プリコンパイル）を実行することでassets以下の
+// ファイル・ディレクトリをpublic/assets内に生成します。（webpackerで管理している方はpublic/packs内に生成します。）
+body {
+  background-image: image-url("hoge.jpg");
+}
